@@ -7,6 +7,12 @@ importance: 1
 category: academic
 ---
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/Pedestrain_tracking.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 The goal of this thesis project was to investigate the viability of Deep Neural Network (DNN)-based Multi-Object Tracking approaches for tracking pedestrians. The tracking data is used in the Autonomous Driver Assistance System (ADAS). Multiple Object Tracking refers to the process of tracking multiple agents across video (MOT). The use of pedestrian detection alone for ADAS is inferior to the use of pedestrian tracking to determine the next action to be taken. Tracking pedestrians allows one to predict their next location with high accuracy. Furthermore, pedestrians may be missed in certain situations, such as occlusion, and the system fails to provide the stability required for safety priorities. A customized version of YOLO v3 is used to detect pedestrians.
 
 The most common tracking issues are ID switches and losing track of objects due to occlusion. Deep SORT and SORT-OH tracking methods are used to track pedestrians. The Deep SORT method makes use of motion features obtained through the Kalman filter and appearance features obtained through the CNN feature encoder developed for Person Re-ID. SORT-OH is a method for dealing with occlusion and re-identifying targets using geometric cues. It has been discovered through ablation research that Re-Identification is critical in obtaining good tracking results. Using different object detectors DPM, SDP, and Faster R-CNN, it was also possible to conclude that detection quality is important in the performance of the Object Tracking approach.
