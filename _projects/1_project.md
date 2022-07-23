@@ -11,50 +11,58 @@ The goal of this thesis project was to investigate the viability of Deep Neural 
 
 The most common tracking issues are ID switches and losing track of objects due to occlusion. Deep SORT and SORT-OH tracking methods are used to track pedestrians. The Deep SORT method makes use of motion features obtained through the Kalman filter and appearance features obtained through the CNN feature encoder developed for Person Re-ID. SORT-OH is a method for dealing with occlusion and re-identifying targets using geometric cues. It has been discovered through ablation research that Re-Identification is critical in obtaining good tracking results. Using different object detectors DPM, SDP, and Faster R-CNN, it was also possible to conclude that detection quality is important in the performance of the Object Tracking approach.
 
-Both Deep SORT with DNN based Re-ID and SORT-OH with geometric cue-based Re-ID features  perform similarly, demonstrating the potential of DNN techniques in  object tracking. Both the MOT methods obtained good results by  minimizing ID switches and handling occlusion, even in a difficult  situation with blur and varying illumination.
+Both Deep SORT with DNN based Re-ID and SORT-OH with geometric cue-based Re-ID features perform similarly, demonstrating the potential of DNN techniques in object tracking. Both the MOT methods obtained good results by  minimizing ID switches and handling occlusion, even in a difficult  situation with blur and varying illumination.
 
 Based on the findings of the research, it is possible to conclude that DNN-based methods can be used as a viable alternative in the MOT pipeline. The tracking results of two implementation methods on open source data shows that a MOT strategy that employs DNN-based Re-ID, is equivalent to SORT OH, which employs geometric cues for Re-ID.
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/DS_VS_SOH.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+  Overall tracking performance comparing two MOT methods on MOT 17 data set using average of DPM, SDP and Faster R-CNN object detectors
+</div>
+
 DNN-based methods can help MOT during the detection and Re-ID stages. Target Re-Identification, as shown in the graph below, plays a critical role in improving MOT performance. Target Re-Identification contributes significantly to improved performance. The MOTA rises from 20.5 percent to 43.2 percent. The Target Re-Identification task makes it possible to track pedestrians more reliably by reducing fragmentation, reducing ID switches, and increasing the number of tracks tracked. Furthermore, a comparison of appearance features between DNN-based Re-ID features, RGB, and HSV color spaces demonstrates the robustness of Re-ID features. Tight clusters in the visualisation represent the Re-ID feature's robustness.
-
-When the tracking results it is clear that the tracking-by-detection approaches rely excessively on detection quality. MOTA increases from 22.2 percent DPM detector to 61.3 percent SDP by simply changing the tracking detection. Good detection quality allows tracking to perform well, but it is impossible to achieve good detection in difficult situations such as poor illumination or high occlusion. As a result, putting more emphasis on other components of the tracking pipeline will allow the approach to work across a broader range of scenarios.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/Effectiveness_REID.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Ablation test to evaluate Effectiveness of Re-ID features
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/Visualization_REID.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+  Visualization of RGB histogram features, HSV histogram features
+  and our Re-ID features
+</div>
+
+When the tracking results it is clear that the tracking-by-detection approaches rely excessively on detection quality. MOTA increases from 22.2 percent DPM detector to 61.3 percent SDP by simply changing the tracking detection. Good detection quality allows tracking to perform well, but it is impossible to achieve good detection in difficult situations such as poor illumination or high occlusion. As a result, putting more emphasis on other components of the tracking pipeline will allow the approach to work across a broader range of scenarios.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/DS_Result.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+  Continuous frame of sequence illustrating how well ID switch are
+  handled by DeepSORT
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/SOH_Result.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+  Continuous frame of sequence illustrating how well ID switch are
+  handled by SORT-OH
 </div>
