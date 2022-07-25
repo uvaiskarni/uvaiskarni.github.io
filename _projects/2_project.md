@@ -2,9 +2,8 @@
 layout: page
 title:  Air Quality Prediction Using Machine Learning
 description: Predicting air quality is a difficult subject since air quality varies greatly from place to place, from quiet residential neighborhoods and parks to bustling streets and industrial sites. We must also take into account climatic patterns such as rain, air pressure, temperature, and so on, which influence the volume of each pollutant in the air. We aim for predictive algorithms that can assist us proactively determine potential strategies that we can take to improve air quality and/or protect vulnerable populations from its consequences.
-img: assets/img/project/Centralized_Federated.jpg
+img: assets/img/projects/Centralized_Federated.jpg
 importance: 2
-category: work
 ---
 
 Air pollution is a major issue these days that is causing increasing concern among the general public. As a result, several air quality stations measure the pollutants in the air, and numerous prediction models have been developed to predict the amount of these pollutants within a given time frame (in the next hour, for example). First, a centralized model was developed to forecast the number of specific pollutants (for example, PM10 and NO2) within the next hour. Following the validation of the centralized model's accuracy (by comparing predictions to real values), the federated model was built, in which a server distributes a specific model to all clients participating in the federation for training. For this model, the Tensorflow library and Federated implementation were used to carry out the experiments required to test the federated learning approach.
