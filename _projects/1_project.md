@@ -4,7 +4,6 @@ title: Pedestrian Multiple Object Tracking Using Deep Learning
 description: Examining the viability of Deep Neural  Network (DNN) based Multi-Object Tracking approaches for tracking pedestrians.
 img: assets/img/projects/Pedestrain_tracking.png
 importance: 1
-category:
 ---
 
 <div class="row justify-content-sm-center">
