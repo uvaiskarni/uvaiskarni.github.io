@@ -2,8 +2,7 @@
 layout: page
 title: Hand Gesture recognition
 description: Developed an end to end image classification system using Fast R-CNN Network to predict 6 hand gestures.
-img: assets/img/projects/.jpg
-redirect: https://github.com/uvaiskarni/Smart-Hand-Gesture-Recognition
+img: assets/img/projects/.
 importance: 3
 ---
 
@@ -11,8 +10,9 @@ The smart hand gesture recognition system can detect six different hand gestures
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/Responses_Gestures.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/Response_Gestures.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      System responses to gestures
 </div>
@@ -32,7 +32,7 @@ Second Subsystem is developed using Keras, a deep learning API where the model i
 
 The main functionality in the third subsystem is to react appropriately by Furhat social robot to the detected hand gesture that is detected by first and second subsystems. The initial design was to connect first and second subsystems to Furhat robot via TCP connection. Due to time limit, this feature is replaced by involving a human in the communication by reading the output of the second subsystem and give voice command to Furhat robot in order to react. Furhat robot reactions consists of two aspects: Facial expressions and saying a sentence. The input and output of this subsystem as shown in prior table above.
 
-4.End to End Subsystem (Specialisation)
+4.End to End Subsystem (Specialisation):
 
 An Object Detection API to train a Fast Region Convolution Neural Network is used. The reason we chose Fast R-CNN is that it can classify multiple objects with low latency. The input features to the network are raw frames from the videos and output is a CSV file containing the desired class (Hand Gesture) and position of the hand in the frame. The Faster R-CNN has three components:
   – Convolution Layers: To extract features from images.
@@ -43,14 +43,17 @@ An Object Detection API to train a Fast Region Convolution Neural Network is use
       <div class="col-sm mt-3 mt-md-0">
           {% include figure.html path="assets/img/projects/H_01_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
+  </div>
   <div class="row">
       <div class="col-sm mt-3 mt-md-0">
           {% include figure.html path="assets/img/projects/H_02_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
+  </div>
   <div class="row">
       <div class="col-sm mt-3 mt-md-0">
           {% include figure.html path="assets/img/projects/H_03_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
+  </div>
   <div class="caption">
        Results from the end to end subsystems
   </div>

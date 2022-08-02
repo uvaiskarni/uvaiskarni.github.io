@@ -1,8 +1,8 @@
 ---
 layout: page
 title:  Air Quality Prediction Using Machine Learning
-description: Predicting air quality is a difficult subject since air quality varies greatly from place to place, from quiet residential neighborhoods and parks to bustling streets and industrial sites. We must also take into account climatic patterns such as rain, air pressure, temperature, and so on, which influence the volume of each pollutant in the air. We aim for predictive algorithms that can assist us proactively determine potential strategies that we can take to improve air quality and/or protect vulnerable populations from its consequences.
-img: assets/img/projects/Centralized_Federated.jpg
+description: Developed an LSTM based model to forecast multivariant air pollutants  
+img: assets/img/projects/Centralized_Federated.png
 importance: 2
 ---
 
@@ -28,9 +28,11 @@ The centralized LSTM model that performs the best is the one that is used in the
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/LSTMModel.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      General architecture of our 24 hours prediction model
 </div>
+
 
 The LSTM model contains 3 layers: First layer is the LSTM-sequence Layer which takes the 24 hours sequence of the all features coming from the one hot encoding and outputs the 24 hours sequence of the future values. Secondly, the middle hidden layer also is an LSTM layer but it performs sequence to vector predictions where instead of sequence to sequence predictions. Since the outputs are future hourly values for only the next hour, the output shape is only 24 which come from the last LSTM cell as output. Lastly, it contains the dense layer getting the next 24 hours values as predictions for all 4 gases therefore, the number of output values are 24 x 4 = 96 values.
 
@@ -41,6 +43,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/Centralized_Traning.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      Training vs Validation loss plot
 </div>
@@ -49,6 +52,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/NO2Actual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      NO2 Actual Vs Predicted values
 </div>
@@ -57,6 +61,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/NOXActual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      NOX Actual Vs Predicted values
 </div>
@@ -65,6 +70,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/PM2.5Actual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      PM 2.5 Actual Vs Predicted values
 </div>
@@ -73,6 +79,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/PM10Actual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
 <div class="caption">
      PM 10 Actual Vs Predicted values
 </div>
