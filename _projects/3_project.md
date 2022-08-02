@@ -2,7 +2,7 @@
 layout: page
 title: Hand Gesture recognition
 description: Developed an end to end image classification system using Fast R-CNN Network to predict 6 hand gestures.
-img: assets/img/projects/.
+img: assets/img/projects/HandGestureRecognition.png
 importance: 3
 ---
 
