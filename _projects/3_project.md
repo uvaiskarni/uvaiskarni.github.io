@@ -8,8 +8,8 @@ importance: 3
 
 The smart hand gesture recognition system can detect six different hand gestures, as listed in table below, and reacts accordingly. The system consists of three subsystems. The input of the system is a video containing a hand gesture, first subsystem processes the video and extract landmarks of the hand in each frame then pass it to the trained machine learning model to decide which hand gesture is present in each frame then the detected gesture will be shown to the user in order to give a voice command to Furhat robot with the detected gesture to do facial expressions and speech sentences depending upon the type of gesture.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/Response_Gestures.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -39,8 +39,8 @@ An Object Detection API to train a Fast Region Convolution Neural Network is use
   – Region Proposal Network: To check whether the desired object is present or not. If the object is present then a bounding box for those object are given out.
   – Classes Detection: Here the bounded region part of the images are classified. It simply flattens the bounding region of the image and passes it through several dense layer and then a final Softmax layer which returns probabilities for each class.
 
-  <div class="row">
-      <div class="col-sm mt-3 mt-md-0">
+  <div class="row justify-content-sm-center">
+      <div class="col-sm-8 mt-3 mt-md-0">
           {% include figure.html path="assets/img/projects/H_01_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
   </div>
@@ -49,8 +49,8 @@ An Object Detection API to train a Fast Region Convolution Neural Network is use
           {% include figure.html path="assets/img/projects/H_02_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
   </div>
-  <div class="row">
-      <div class="col-sm mt-3 mt-md-0">
+  <div class="row justify-content-sm-center">
+      <div class="col-sm-8 mt-3 mt-md-0">>
           {% include figure.html path="assets/img/projects/H_03_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
   </div>

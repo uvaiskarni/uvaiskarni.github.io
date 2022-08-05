@@ -11,6 +11,9 @@ importance: 1
         {% include figure.html path="assets/img/projects/Pedestrain_tracking.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+<div class="caption">
+  Overall tracking flow.
+</div>
 
 The goal of this thesis project was to investigate the viability of Deep Neural Network (DNN)-based Multi-Object Tracking approaches for tracking pedestrians. The tracking data is used in the Autonomous Driver Assistance System (ADAS). Multiple Object Tracking refers to the process of tracking multiple agents across video (MOT). The use of pedestrian detection alone for ADAS is inferior to the use of pedestrian tracking to determine the next action to be taken. Tracking pedestrians allows one to predict their next location with high accuracy. Furthermore, pedestrians may be missed in certain situations, such as occlusion, and the system fails to provide the stability required for safety priorities. A customized version of YOLO v3 is used to detect pedestrians.
 
@@ -26,10 +29,10 @@ Based on the findings of the research, it is possible to conclude that DNN-based
     </div>
 </div>
 <div class="caption">
-  Overall tracking performance comparing two MOT methods on MOT 17 data set using average of DPM, SDP and Faster R-CNN object detectors
+  Overall tracking performance comparing two MOT methods on MOT 17 data set using average of DPM, SDP and Faster R-CNN object detectors.
 </div>
 
-DNN-based methods can help MOT during the detection and Re-ID stages. Target Re-Identification, as shown in the graph below, plays a critical role in improving MOT performance. Target Re-Identification contributes significantly to improved performance. The MOTA rises from 20.5 percent to 43.2 percent. The Target Re-Identification task makes it possible to track pedestrians more reliably by reducing fragmentation, reducing ID switches, and increasing the number of tracks tracked. Furthermore, a comparison of appearance features between DNN-based Re-ID features, RGB, and HSV color spaces demonstrates the robustness of Re-ID features. Tight clusters in the visualisation represent the Re-ID feature's robustness.
+DNN-based methods can help MOT during the detection and Re-ID stages. Target Re-Identification, as shown in the graph below, plays a critical role in improving MOT performance. Target Re-Identification contributes significantly to improved performance. The MOTA rises from 20.5 percent to 43.2 percent. The Target Re-Identification task makes it possible to track pedestrians more reliably by reducing fragmentation, reducing ID switches, and increasing the number of tracks tracked. Furthermore, a comparison of appearance features between DNN-based Re-ID features, RGB, and HSV color spaces demonstrates the robustness of Re-ID features. Tight clusters in the visualization represent the Re-ID feature's robustness.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -37,7 +40,7 @@ DNN-based methods can help MOT during the detection and Re-ID stages. Target Re-
     </div>
 </div>
 <div class="caption">
-    Ablation test to evaluate Effectiveness of Re-ID features
+    Ablation test to evaluate Effectiveness of Re-ID features.
 </div>
 
 <div class="row justify-content-sm-center">
@@ -47,7 +50,7 @@ DNN-based methods can help MOT during the detection and Re-ID stages. Target Re-
 </div>
 <div class="caption">
   Visualization of RGB histogram features, HSV histogram features
-  and our Re-ID features
+  and our Re-ID features.
 </div>
 
 When the tracking results it is clear that the tracking-by-detection approaches rely excessively on detection quality. MOTA increases from 22.2 percent DPM detector to 61.3 percent SDP by simply changing the tracking detection. Good detection quality allows tracking to perform well, but it is impossible to achieve good detection in difficult situations such as poor illumination or high occlusion. As a result, putting more emphasis on other components of the tracking pipeline will allow the approach to work across a broader range of scenarios.
@@ -58,8 +61,7 @@ When the tracking results it is clear that the tracking-by-detection approaches
     </div>
 </div>
 <div class="caption">
-  Continuous frame of sequence illustrating how well ID switch are
-  handled by DeepSORT
+  Continuous frame of sequence illustrating how well ID switch are handled by DeepSORT.
 </div>
 
 <div class="row justify-content-sm-center">
@@ -68,6 +70,5 @@ When the tracking results it is clear that the tracking-by-detection approaches
     </div>
 </div>
 <div class="caption">
-  Continuous frame of sequence illustrating how well ID switch are
-  handled by SORT-OH
+  Continuous frame of sequence illustrating how well ID switch are handled by SORT-OH.
 </div>
