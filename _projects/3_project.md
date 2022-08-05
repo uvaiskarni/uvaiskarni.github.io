@@ -2,7 +2,7 @@
 layout: page
 title: Hand Gesture recognition
 description: Developed an end to end image classification system using Fast R-CNN Network to predict 6 hand gestures.
-img: assets/img/projects/HandGestureRecognition.png
+img: assets/img/projects/HandGestureRecognition.PNG
 importance: 3
 ---
 
@@ -10,7 +10,7 @@ The smart hand gesture recognition system can detect six different hand gestures
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/Response_Gestures.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/Response_Gestures.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -41,17 +41,17 @@ An Object Detection API to train a Fast Region Convolution Neural Network is use
 
   <div class="row justify-content-sm-center">
       <div class="col-sm-8 mt-3 mt-md-0">
-          {% include figure.html path="assets/img/projects/H_01_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
+          {% include figure.html path="assets/img/projects/H_01_res.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
   </div>
   <div class="row">
       <div class="col-sm mt-3 mt-md-0">
-          {% include figure.html path="assets/img/projects/H_02_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
+          {% include figure.html path="assets/img/projects/H_02_res.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
   </div>
   <div class="row justify-content-sm-center">
       <div class="col-sm-8 mt-3 mt-md-0">>
-          {% include figure.html path="assets/img/projects/H_03_res.png" title="example image" class="img-fluid rounded z-depth-1" %}
+          {% include figure.html path="assets/img/projects/H_03_res.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
       </div>
   </div>
   <div class="caption">

@@ -2,7 +2,7 @@
 layout: page
 title:  Air Quality Prediction Using Machine Learning
 description: Developed an LSTM based model to forecast multivariant air pollutants.
-img: assets/img/projects/Centralized_Federated.png
+img: assets/img/projects/Centralized_Federated.PNG
 importance: 2
 ---
 
@@ -10,7 +10,7 @@ Air pollution is a major issue these days that is causing increasing concern amo
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/Centralized_Federated.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/Centralized_Federated.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 <div class="caption">
     Simple representation illustrating Centralized and Federated  
@@ -26,7 +26,7 @@ The centralized LSTM model that performs the best is the one that is used in the
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/LSTMModel.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/LSTMModel.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -41,7 +41,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/Centralized_Traning.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/Centralized_Traning.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -50,7 +50,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/NO2Actual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/NO2Actual_Vs_Predicted.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -59,7 +59,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/NOXActual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/NOXActual_Vs_Predicted.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -68,7 +68,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/PM2.5Actual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/PM2.5Actual_Vs_Predicted.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -77,7 +77,7 @@ previous 24 hours values are utilised to predict the next 24 hours of the PM10, 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/PM10Actual_Vs_Predicted.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/PM10Actual_Vs_Predicted.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

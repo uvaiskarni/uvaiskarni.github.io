@@ -2,12 +2,12 @@
 layout: page
 title: RL based Maze Traverser Agent  
 description: An Proximal Policy Optmization based RL agent is trained to navigate a maze bulti using Unity 3D.
-img: assets/img/1.jpg
+img: assets/img/projects/Unity_Maze.PNG
 importance: 4
 ---
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/RL_maze.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/RL_maze.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -29,22 +29,22 @@ During the initial episodes of training, the agent starts exploring the environm
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/RL_with_cumulative.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/RL_without_curriculum.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-     System responses to gestures
+     Training plot without curriculum learning
 </div>
 
-In our maze game to increase the difficulty level was to move the target further away from the agent. As the target is close to the agent it converges faster around 25,000th episode. After which the diculty level is increased i.e. the target is moved more further away and thus there is a drop in the reward value around 30,000th episode. The same trend continues until around 90,000 episodes. After which it converges to the optimal solution.
+In our maze game to increase the difficulty level was to move the target further away from the agent. As the target is close to the agent it converges faster around 25,000th episode. After which the difficulty level is increased i.e. the target is moved more further away and thus there is a drop in the reward value around 30,000th episode. The same trend continues until around 90,000 episodes. After which it converges to the optimal solution.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/RL_without_cumulative.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/RL_with_curriculum.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-     System responses to gestures
+     Training plot with curriculum learning
 </div>
 
 We successfully solved the maze problem using PPO along with curriculum learning. Curriculum learning along with Rewarding shaping allows the algorithm to converge faster to an optimal policy. Curriculum learning is also found to be viable in case of a dynamic environment for faster convergence. The input features for the neural network are the most important deciding factor that determines the performance of the model, for example in our case the ray perception sensor gathers the right observations(neural network input features) to attain the optimal policy. In this way experimenting with different input features for the neural network and Unity features helped in optimizing the result.
