@@ -1,79 +1,30 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 6
+title: Autonomous Downscaled Model Car Using Neural Networks and Machine Learning
+description: This project was done to prove my interest on autonomous cars and show I have what it takes to do research on the subject.
+img: assets/img/projects/Prototype_car.PNG
+importance: 5
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
+Hardware : Raspberry Pi 3 Software/Language: Python
+Technology: Neural Networks
+Domain: Robotics - Autonomous Cars
+Role Played: Team Leader
+Components used: Raspberry Pi 3 Model B, Pi Camera Module, L293D Breakout Board(motor driver),Toy RC car, Lithium ion Battery pack
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/Prototype_car.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+     Prototype car
 </div>
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+In this contemporary world, the number of accidents occurring has increased drastically which leads to an increase in the number of fatal deaths. This is mostly caused by the distractions that driver encounters. For example, texting and driving,less attention span of driver,etc. Due to the above reasons, autonomous cars would be a better option which takes the errors of a driver away from the equation. The proposed concept in the paper is to make an autonomous downscaled model car using a generic RC car as base. We aim to achieve the above by using image processing which is trained by using neural networks to create a model through which autonomous cars
+are achieved. The hardware components used in this project are Ras pberry PI 3 B microcomputer , camera module, HCSR04 ultrasonic sensor. We achieve the following
+features in our model, (a)Lane detection, (b)Traffic signal identification, (c)Road signs identification, (d)Obstacle detection avoidance and (e)Pedestrian Detection.
+​
+This Project was presented at IEEE SS12 2018 prelims event held at Jeppiar Institute of Technology, Chennai.
+​
+The work includes  design of an RC toy car, that can drive autonomously on a given map in which it has been trained rigorously. It involves training the car on the map while capturing photos of the environment and co-relating them to generate a neural network model using machine learning. The RC car has driven autonomously on the given map successfully. Obstacle avoidance has been implemented using ultrasonic sensor and the RC car successfully stops when it faces an obstacle. Haar-cascade image processing has been used successfully to identify stop signs and red traffic signal, so as to make the car stop.
