@@ -29,7 +29,6 @@
     - title: Master’s Thesis Intern, Pedestrian Multiple Object Tracking Using Deep Learning
       Company: Veoneer, Stockholm, Sweden
       year: 01/2021 - 09/2021
-      <a href="https://uu.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=1&af=%5B%5D&searchType=SIMPLE&sortOrder2=title_sort_asc&query=Pedestrian+Multiple+Object+Tracking+Using+Deep+Learning&language=en&pid=diva2%3A1623112&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=5870"> Link </a>
       description:
         - Implemented two Multi-Object Tracking approaches Deep SORT and SORT-OH.
         - Tested the viability of DNN based features in tracking.
@@ -38,7 +37,6 @@
     - title: Project Intern, Decentralized Air Quality Monitoring and Prediction
       Company: Ericsson, Stockholm, Sweden
       year: 09/2020 - 01/2021
-      <a href="https://www.ericsson.com/en/blog/2021/11/air-quality-prediction-using-machine-learning"> Link </a>
       description:
           - Utilizing Federated Learning, developed and implemented a Timeseries prediction model using LSTMs to forecast multivariant air pollutants values in Stockholm.
           - Performed data visualisation to comprehend the data, feature selection based on SHAP values and correlation, data imputation of missing values and outlier detection.
@@ -94,7 +92,7 @@
       description: Published by IEEE Technically Sponsored Balikpapan, Indonesia - IEEE ISBN:978-1-5386-7725-4
 
 - title: References
-  type: list
+  type: time_table
   contents:
     - title: Ehsan Amini, Senior Feature Engineer, Arriver
       description: ehsan.amini@arriver.com, +46 733440864
