@@ -7,10 +7,15 @@ importance: 6
 ---
 
 Hardware : Nox R2.19 FLight Controller
+
 Software/Language: Python
+
 Technology: Computer Vision - Image Processing
+
 Domain: Robotics - Quadcopter
+
 Role Played: Team Leader
+
 Components used: Nox R2.19 FLight Controller, Logitech HD PRO Webcam C920 , RF Joystick , LiPo battery
 
 <div class="row justify-content-sm-center">

@@ -6,10 +6,16 @@ img: assets/img/projects/Prototype_car.PNG
 importance: 5
 ---
 
-Hardware : Raspberry Pi 3 Software/Language: Python
+Hardware : Raspberry Pi 3
+
+Software/Language: Python
+
 Technology: Neural Networks
+
 Domain: Robotics - Autonomous Cars
+
 Role Played: Team Leader
+
 Components used: Raspberry Pi 3 Model B, Pi Camera Module, L293D Breakout Board(motor driver),Toy RC car, Lithium ion Battery pack
 
 <div class="row justify-content-sm-center">
